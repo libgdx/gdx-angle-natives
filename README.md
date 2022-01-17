@@ -1,0 +1,4 @@
+# gdx-angle-natives
+This repository contains binaries for [ANGLE](https://github.com/google/angle) for x86_64 Windows, Linux, and macOS. The binaries are build via GitHub workflows which are based on https://github.com/xiaozhuai/angle_builds/. The binaries are used by the gdx-lwjgl3-angle in the [libGDX repository](https://github.com/libgdx/libgdx), allowing libGDX desktop applications to use ANGLE to emulate OpenGL ES 2 and 3. This is especially useful on macOS, where OpenGL support is broken in different ways.
+
+The binaries in this repository are downloaded as part of the `fetchNatives` task in libGDX's Gradle build, and placed in `gdx-lwjgl3-angle/res`. The binaries are updated manually by triggering the workflows, then pushing the resulting artifacts to this repository.
